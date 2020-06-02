@@ -40,12 +40,25 @@
         android:layout_marginBottom="496dp"
         android:background="@color/colorAccent"
         android:fontFamily="sans-serif-thin"
-        android:text="Search"
+        android:text="GO"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TxtSearch"
         app:layout_constraintVertical_bias="0.375" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="51dp"
+        android:text="Tip: Use City name and 2 letter Country Code (EX: Thanjavur,IN)"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
