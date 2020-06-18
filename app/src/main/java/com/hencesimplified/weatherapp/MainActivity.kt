@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class MainActivity : AppCompatActivity() {
 
@@ -14,8 +15,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val searchBtn=findViewById<Button>(R.id.btnSearch)
-        val searchtxt=findViewById<EditText>(R.id.TxtSearch)
+
+        val searchBtn=findViewById<FloatingActionButton>(R.id.floatingSearch)
+        val searchtxt=findViewById<EditText>(R.id.txtSearch)
+
 
         searchBtn.setOnClickListener{
             val cityName=searchtxt.text.toString().toUpperCase()
@@ -25,6 +28,7 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("cityName", cityName)
             // start your next activity
             startActivity(intent)
+            overridePendingTransition(R.anim.right_enter,R.anim.left_out)
 
         }
 
