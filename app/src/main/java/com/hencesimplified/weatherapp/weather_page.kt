@@ -1,5 +1,6 @@
 package com.hencesimplified.weatherapp
 
+import android.content.Intent
 import android.os.AsyncTask
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,6 +8,7 @@ import android.view.View
 import android.widget.ProgressBar
 import android.widget.RelativeLayout
 import android.widget.TextView
+import androidx.appcompat.app.AlertDialog
 import org.json.JSONObject
 import java.net.URL
 import java.text.SimpleDateFormat
@@ -97,6 +99,14 @@ class weather_page : AppCompatActivity() {
             }
 
         }
+    }
+
+    override fun onBackPressed()
+    {
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+        overridePendingTransition(R.anim.left_enter,R.anim.right_out)
+
     }
 
 
