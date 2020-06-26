@@ -78,7 +78,7 @@
                 android:id="@+id/town"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Krakow"
+                android:text=""
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
             <ImageView
@@ -91,14 +91,14 @@
                 android:id="@+id/temp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="15°C"
+                android:text="Simple"
                 />
 
             <TextView
                 android:id="@+id/desc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Description"
+                android:text="Weather"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
 

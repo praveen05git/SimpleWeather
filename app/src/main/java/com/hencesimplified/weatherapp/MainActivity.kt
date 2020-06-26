@@ -1,13 +1,16 @@
 package com.hencesimplified.weatherapp
 
 import android.content.Intent
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
+import androidx.cardview.widget.CardView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
 import kotlin.math.E
@@ -22,6 +25,8 @@ class MainActivity : AppCompatActivity() {
 
         val searchBtn=findViewById<FloatingActionButton>(R.id.floatingSearch)
         val searchtxt=findViewById<EditText>(R.id.txtSearch)
+        val cardViewShake= findViewById<CardView>(R.id.cardview)
+        val shakeAnimation = AnimationUtils.loadAnimation(applicationContext,R.anim.shake)
 
 
         searchBtn.setOnClickListener{
@@ -30,8 +35,9 @@ class MainActivity : AppCompatActivity() {
 
             if(cityName.equals(""))
             {
-                Toast.makeText(applicationContext,"Enter City Name",Toast.LENGTH_SHORT).show()
-                //Snackbar.make(it,"Enter City Name",Snackbar.LENGTH_SHORT).setBackgroundTint().show()
+                cardViewShake.startAnimation(shakeAnimation)
+                //Toast.makeText(applicationContext,"Enter City Name",Toast.LENGTH_SHORT).show()
+                Snackbar.make(it,"Enter City Name",Snackbar.LENGTH_SHORT).setBackgroundTint(Color.parseColor("#96bb7c")).setTextColor(Color.parseColor("#ffffff")).show()
             }
             else
             {

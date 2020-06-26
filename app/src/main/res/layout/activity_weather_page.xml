@@ -147,6 +147,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Sunrise"
+                            android:textColor="@color/white"
                             android:textSize="12dp" />
 
                         <TextView
@@ -154,6 +155,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="06:40 AM"
+                            android:textColor="@color/white"
                             android:textSize="14dp" />
                     </LinearLayout>
 
@@ -184,6 +186,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Sunset"
+                            android:textColor="@color/white"
                             android:textSize="12dp" />
 
                         <TextView
@@ -191,6 +194,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="06:40 AM"
+                            android:textColor="@color/white"
                             android:textSize="14dp" />
                     </LinearLayout>
 
@@ -221,6 +225,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Wind"
+                            android:textColor="@color/white"
                             android:textSize="12dp" />
 
                         <TextView
@@ -228,6 +233,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="06:40 AM"
+                            android:textColor="@color/white"
                             android:textSize="14dp" />
                     </LinearLayout>
                 </LinearLayout>
@@ -265,6 +271,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Pressure"
+                            android:textColor="@color/white"
                             android:textSize="12dp" />
 
                         <TextView
@@ -272,6 +279,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="06:40 AM"
+                            android:textColor="@color/white"
                             android:textSize="14dp" />
                     </LinearLayout>
 
@@ -302,6 +310,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Humidity"
+                            android:textColor="@color/white"
                             android:textSize="12dp" />
 
                         <TextView
@@ -309,6 +318,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="06:40 AM"
+                            android:textColor="@color/white"
                             android:textSize="14dp" />
                     </LinearLayout>
 
@@ -339,6 +349,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Built By"
+                            android:textColor="@color/white"
                             android:textSize="12dp" />
 
                         <TextView
@@ -346,6 +357,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Praveen"
+                            android:textColor="@color/white"
                             android:textSize="14dp" />
                     </LinearLayout>
                 </LinearLayout>
@@ -366,7 +378,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:textColor="#000000"
-            android:text="Something went wrong"
+            android:text="Please check your internet connection and enter correct city name"
             android:visibility="gone" />
 
 
