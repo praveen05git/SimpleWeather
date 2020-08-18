@@ -17,7 +17,7 @@ import java.util.*
 class weather_page : AppCompatActivity() {
 
     var CITY: String = "hyderabad,in"
-    val API: String = "849dee665fdf16e17509cbc2f4b68eeb"
+    val API: String = "API key"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
