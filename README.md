@@ -8,4 +8,4 @@ Use Simple Weather App, just search the location manually and get the weather in
 * No ads
 * Low usage of phone memory
 
-Available on Play Store:https://play.google.com/store/apps/details?id=com.hencesimplified.weatherapp
+Available on Play Store: https://play.google.com/store/apps/details?id=com.hencesimplified.weatherapp
