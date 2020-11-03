@@ -8,16 +8,15 @@ import android.view.View
 import android.widget.ProgressBar
 import android.widget.RelativeLayout
 import android.widget.TextView
-import androidx.appcompat.app.AlertDialog
 import org.json.JSONObject
 import java.net.URL
 import java.text.SimpleDateFormat
 import java.util.*
 
-class weather_page : AppCompatActivity() {
+class WeatherActivity : AppCompatActivity() {
 
     var CITY: String = "hyderabad,in"
-    val API: String = "API key"
+    val API: String = "OPEN_WEATHER_API_KEY"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,12 +39,13 @@ class weather_page : AppCompatActivity() {
         }
 
         override fun doInBackground(vararg params: String?): String? {
-            var response:String?
-            try{
-                response = URL("https://api.openweathermap.org/data/2.5/weather?q=$CITY&units=metric&appid=$API").readText(
-                    Charsets.UTF_8
-                )
-            }catch (e: Exception){
+            var response: String?
+            try {
+                response =
+                    URL("https://api.openweathermap.org/data/2.5/weather?q=$CITY&units=metric&appid=$API").readText(
+                        Charsets.UTF_8
+                    )
+            } catch (e: Exception) {
                 response = null
             }
             return response
@@ -61,30 +61,35 @@ class weather_page : AppCompatActivity() {
                 val wind = jsonObj.getJSONObject("wind")
                 val weather = jsonObj.getJSONArray("weather").getJSONObject(0)
 
-                val updatedAt:Long = jsonObj.getLong("dt")
-                val updatedAtText = "Updated at: "+ SimpleDateFormat("dd/MM/yyyy hh:mm a", Locale.ENGLISH).format(Date(updatedAt*1000))
-                val temp = main.getString("temp")+"°C"
-                val tempMin = "Min Temp: " + main.getString("temp_min")+"°C"
-                val tempMax = "Max Temp: " + main.getString("temp_max")+"°C"
-                val pressure = main.getString("pressure")+" hpa"
-                val humidity = main.getString("humidity")+" %"
+                val updatedAt: Long = jsonObj.getLong("dt")
+                val updatedAtText =
+                    "Updated at: " + SimpleDateFormat("dd/MM/yyyy hh:mm a", Locale.ENGLISH).format(
+                        Date(updatedAt * 1000)
+                    )
+                val temp = main.getString("temp") + "°C"
+                val tempMin = "Min Temp: " + main.getString("temp_min") + "°C"
+                val tempMax = "Max Temp: " + main.getString("temp_max") + "°C"
+                val pressure = main.getString("pressure") + " hpa"
+                val humidity = main.getString("humidity") + " %"
 
-                val sunrise:Long = sys.getLong("sunrise")
-                val sunset:Long = sys.getLong("sunset")
-                val windSpeed = wind.getString("speed")+" m/s"
+                val sunrise: Long = sys.getLong("sunrise")
+                val sunset: Long = sys.getLong("sunset")
+                val windSpeed = wind.getString("speed") + " m/s"
                 val weatherDescription = weather.getString("description")
 
-                val address = jsonObj.getString("name")+", "+sys.getString("country")
+                val address = jsonObj.getString("name") + ", " + sys.getString("country")
 
                 /* Populating extracted data into our views */
                 findViewById<TextView>(R.id.address).text = address
-                findViewById<TextView>(R.id.updated_at).text =  updatedAtText
+                findViewById<TextView>(R.id.updated_at).text = updatedAtText
                 findViewById<TextView>(R.id.status).text = weatherDescription.capitalize()
                 findViewById<TextView>(R.id.temp).text = temp
                 findViewById<TextView>(R.id.temp_min).text = tempMin
                 findViewById<TextView>(R.id.temp_max).text = tempMax
-                findViewById<TextView>(R.id.sunrise).text = SimpleDateFormat("hh:mm a", Locale.ENGLISH).format(Date(sunrise*1000))
-                findViewById<TextView>(R.id.sunset).text = SimpleDateFormat("hh:mm a", Locale.ENGLISH).format(Date(sunset*1000))
+                findViewById<TextView>(R.id.sunrise).text =
+                    SimpleDateFormat("hh:mm a", Locale.ENGLISH).format(Date(sunrise * 1000))
+                findViewById<TextView>(R.id.sunset).text =
+                    SimpleDateFormat("hh:mm a", Locale.ENGLISH).format(Date(sunset * 1000))
                 findViewById<TextView>(R.id.wind).text = windSpeed
                 findViewById<TextView>(R.id.pressure).text = pressure
                 findViewById<TextView>(R.id.humidity).text = humidity
@@ -101,11 +106,10 @@ class weather_page : AppCompatActivity() {
         }
     }
 
-    override fun onBackPressed()
-    {
+    override fun onBackPressed() {
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
-        overridePendingTransition(R.anim.left_enter,R.anim.right_out)
+        overridePendingTransition(R.anim.left_enter, R.anim.right_out)
 
     }
 
