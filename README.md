@@ -14,7 +14,7 @@
 ## Features
 - Low Battery usage
 - No ads
-- Low usage of phone memory</br>
+- Low usage of phone memory
 
 <img align="right" src="https://raw.githubusercontent.com/praveen05git/SimpleWeather/master/screenshots/weatherApp1.png"/>
 
