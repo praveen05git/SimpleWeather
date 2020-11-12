@@ -3,9 +3,6 @@
 <p align="center">  
   Simple Android app to know the weather in your location without revealing the permission to use mobile GPS</br>
   Just search the location manually and get the weather information instantly!!</br>
-  * Low Battery usage
-  * No ads
-  * Low usage of phone memory
 </p>
 </br>
 
