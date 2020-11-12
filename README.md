@@ -7,16 +7,15 @@
 </br>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/praveen05git/SimpleWeather/master/screenshots/weatherApp1.png"/>
-  <img src="https://raw.githubusercontent.com/praveen05git/SimpleWeather/master/screenshots/weatherApp3.png"/>
+  <img width="30%" src="https://raw.githubusercontent.com/praveen05git/SimpleWeather/master/screenshots/weatherApp1.png"/>
+  <img width="30% src="https://raw.githubusercontent.com/praveen05git/SimpleWeather/master/screenshots/weatherApp2.png"/>
+  <img width="30% src="https://raw.githubusercontent.com/praveen05git/SimpleWeather/master/screenshots/weatherApp3.png"/>
 </p></br>
 
 ## Features
 - Low Battery usage
 - No ads
-- Low usage of phone memory
-
-<img align="right" src="https://raw.githubusercontent.com/praveen05git/SimpleWeather/master/screenshots/weatherApp1.png"/>
+- Low usage of phone memory</br>
 
 ## Tech stack & Open-source libraries
 - Minimum SDK level 16
