@@ -5,7 +5,7 @@
   Just search the location manually and get the weather information instantly!!</br>
 </p>
 </br>
-<p>
+<p align="center">
   <img align="left"src="https://raw.githubusercontent.com/praveen05git/SimpleWeather/master/screenshots/weatherApp1.png"/>
   <img align="center" src="https://raw.githubusercontent.com/praveen05git/SimpleWeather/master/screenshots/weatherApp2.png"/>
   <img align="right" src="https://raw.githubusercontent.com/praveen05git/SimpleWeather/master/screenshots/weatherApp3.png"/>
