@@ -8,14 +8,15 @@
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/praveen05git/SimpleWeather/master/screenshots/weatherApp1.png"/>
-  <img src="https://raw.githubusercontent.com/praveen05git/SimpleWeather/master/screenshots/weatherApp2.png"/>
   <img src="https://raw.githubusercontent.com/praveen05git/SimpleWeather/master/screenshots/weatherApp3.png"/>
-</p>
+</p></br>
+
+<img align="right" src="https://raw.githubusercontent.com/praveen05git/SimpleWeather/master/screenshots/weatherApp1.png"/>
 
 ## Features
 - Low Battery usage
 - No ads
-- Low usage of phone memory
+- Low usage of phone memory</br>
 
 ## Tech stack & Open-source libraries
 - Minimum SDK level 16
@@ -24,10 +25,10 @@
 - JSON object to read the Json
 - Custom Toast to warn users
 - Custom Shake animation for the Search activity
-- Custom Transition animations between activities
+- Custom Transition animations between activities</br>
 
 ## Open API
-Openweather Api is used to provide accurate weather data
+Openweather Api is used to provide accurate weather data</br>
 
 ## Download
 Available on Play Store: https://play.google.com/store/apps/details?id=com.hencesimplified.weatherapp
