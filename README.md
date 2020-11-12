@@ -11,12 +11,12 @@
   <img src="https://raw.githubusercontent.com/praveen05git/SimpleWeather/master/screenshots/weatherApp3.png"/>
 </p></br>
 
-<img align="right" src="https://raw.githubusercontent.com/praveen05git/SimpleWeather/master/screenshots/weatherApp1.png"/>
-
 ## Features
 - Low Battery usage
 - No ads
 - Low usage of phone memory</br>
+
+<img align="right" src="https://raw.githubusercontent.com/praveen05git/SimpleWeather/master/screenshots/weatherApp1.png"/>
 
 ## Tech stack & Open-source libraries
 - Minimum SDK level 16
