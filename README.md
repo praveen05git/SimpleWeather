@@ -15,11 +15,6 @@
 - No ads
 - Low usage of phone memory</br>
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/praveen05git/SimpleWeather/master/screenshots/weatherApp2.png"/>
-  <img src="https://raw.githubusercontent.com/praveen05git/SimpleWeather/master/screenshots/weatherApp3.png"/>
-</p>
-
 ## Tech stack & Open-source libraries
 - Minimum SDK level 16
 - Kotlin based
@@ -28,6 +23,11 @@
 - Custom Toast to warn users
 - Custom Shake animation for the Search activity
 - Custom Transition animations between activities</br>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/praveen05git/SimpleWeather/master/screenshots/weatherApp2.png"/>
+  <img src="https://raw.githubusercontent.com/praveen05git/SimpleWeather/master/screenshots/weatherApp3.png"/>
+</p>
 
 ## Open API
 Openweather Api is used to provide accurate weather data</br>
