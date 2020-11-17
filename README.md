@@ -7,7 +7,9 @@
 </br>
 <p align="center">
   <img src="https://raw.githubusercontent.com/praveen05git/SimpleWeather/master/screenshots/weatherApp1.png"/>
+  <img src="https://raw.githubusercontent.com/praveen05git/SimpleWeather/master/screenshots/weatherApp2.png"/>
   <img src="https://raw.githubusercontent.com/praveen05git/SimpleWeather/master/screenshots/weatherApp3.png"/>
+  <img src="https://raw.githubusercontent.com/praveen05git/SimpleWeather/master/screenshots/weatherApp4.png"/>
 </p>
 
 ## Features
