@@ -2,11 +2,11 @@ package com.hencesimplified.weatherapp
 
 import android.content.Intent
 import android.graphics.Color
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.animation.AnimationUtils
 import android.widget.EditText
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
 
             val cityName = searchTxt.text.toString().toUpperCase()
 
-            if (cityName.equals("")) {
+            if (cityName == "") {
                 cardViewShake.startAnimation(shakeAnimation)
                 //Toast.makeText(applicationContext,"Enter City Name",Toast.LENGTH_SHORT).show()
                 Snackbar.make(it, "Enter City Name", Snackbar.LENGTH_SHORT)
@@ -53,10 +53,10 @@ class MainActivity : AppCompatActivity() {
         builder.setTitle("Warning!")
         builder.setMessage("Are you sure, you want to exit?")
         builder.setPositiveButton("Yes") { dialogInterface, i ->
-            val ExitIntent = Intent(Intent.ACTION_MAIN)
-            ExitIntent.addCategory(Intent.CATEGORY_HOME)
-            ExitIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
-            startActivity(ExitIntent)
+            val exitIntent = Intent(Intent.ACTION_MAIN)
+            exitIntent.addCategory(Intent.CATEGORY_HOME)
+            exitIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+            startActivity(exitIntent)
         }
         builder.setNegativeButton("No") { dialogInterface, i ->
             dialogInterface.cancel();

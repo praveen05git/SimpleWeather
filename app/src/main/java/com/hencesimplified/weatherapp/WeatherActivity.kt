@@ -2,12 +2,12 @@ package com.hencesimplified.weatherapp
 
 import android.content.Intent
 import android.os.AsyncTask
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.ProgressBar
 import android.widget.RelativeLayout
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import org.json.JSONObject
 import java.net.URL
 import java.text.SimpleDateFormat
@@ -16,7 +16,7 @@ import java.util.*
 class WeatherActivity : AppCompatActivity() {
 
     var CITY: String = "hyderabad,in"
-    val API: String = "OPEN_WEATHER_API_KEY"
+    val API: String = "API_KEY"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,12 +24,10 @@ class WeatherActivity : AppCompatActivity() {
 
         CITY = intent.getStringExtra("cityName")
 
-
-        weatherTask().execute()
-
+        WeatherTask().execute()
     }
 
-    inner class weatherTask() : AsyncTask<String, Void, String>() {
+    inner class WeatherTask() : AsyncTask<String, Void, String>() {
         override fun onPreExecute() {
             super.onPreExecute()
             /* Showing the ProgressBar, Making the main design GONE */
