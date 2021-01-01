@@ -6,7 +6,7 @@
 </p>
 </br>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/praveen05git/SimpleWeather/master/screenshots/weatherApp1.png"/>
+  <img src="/screenshots/weatherApp1.png"/>
   <img src="https://raw.githubusercontent.com/praveen05git/SimpleWeather/master/screenshots/weatherApp4.png"/>
 </p>
 
