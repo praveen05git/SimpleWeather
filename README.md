@@ -6,8 +6,8 @@
 </p>
 </br>
 <p align="center">
-  <img src="/screenshots/weatherApp1.png"/>
-  <img src="/screenshots/weatherApp4.png"/>
+  <img src="/previews/weatherApp1.png"/>
+  <img src="/previews/weatherApp4.png"/>
 </p>
 
 ## Features
@@ -25,8 +25,8 @@
 - Custom Transition animations between activities</br>
 
 <p align="center">
-  <img src="/screenshots/weatherApp2.png"/>
-  <img src="/screenshots/weatherApp3.png"/>
+  <img src="/previews/weatherGif1.gif"/>
+  <img src="/previews/weatherGif2.gif"/>
 </p>
 
 ## Open API

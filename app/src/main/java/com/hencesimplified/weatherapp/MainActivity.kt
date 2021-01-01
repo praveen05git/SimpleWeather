@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
 
         val searchBtn = findViewById<FloatingActionButton>(R.id.floatingSearch)
         val searchTxt = findViewById<EditText>(R.id.txtSearch)
-        val cardViewShake = findViewById<CardView>(R.id.cardview)
+        val cardViewShake = findViewById<CardView>(R.id.cardView)
         val shakeAnimation = AnimationUtils.loadAnimation(applicationContext, R.anim.shake)
 
 

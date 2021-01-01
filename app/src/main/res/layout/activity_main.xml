@@ -11,9 +11,9 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginBottom="75dp"
-        android:elevation="5dp"
+        android:elevation="6dp"
         android:src="@drawable/town"
-        app:layout_constraintBottom_toBottomOf="@+id/cardview"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -24,45 +24,44 @@
         android:layout_height="400dp"
         android:background="@drawable/cloud"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardview"
+        android:id="@+id/cardView"
         android:layout_width="300dp"
         android:layout_height="100dp"
-        android:layout_marginTop="250dp"
-        android:elevation="4dp"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="1dp"
-        app:layout_constraintBottom_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view">
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginBottom="55dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view">
 
-        <LinearLayout
+
+        <EditText
+            android:id="@+id/txtSearch"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:hint="Enter City" />
 
-            <EditText
-                android:id="@+id/txtSearch"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="25dp"
-                android:hint="Enter City" />
-        </LinearLayout>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardview2"
+        android:id="@+id/cardView2"
         android:layout_width="300dp"
         android:layout_height="200dp"
         android:layout_marginTop="20dp"
-        android:elevation="4dp"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="1dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view">
@@ -84,7 +83,7 @@
                 android:id="@+id/wheather_image"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/wheather" />
+                android:src="@drawable/weather" />
 
             <TextView
                 android:id="@+id/temp"
@@ -110,10 +109,12 @@
         android:layout_marginEnd="40dp"
         android:layout_marginRight="40dp"
         android:clickable="true"
-        app:layout_constraintBottom_toBottomOf="@+id/cardview"
+        android:elevation="6dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/cardview"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/ic_baseline_search_24" />
+        app:layout_constraintTop_toTopOf="@+id/cardView"
+        app:backgroundTint="#99F135"
+        app:srcCompat="@drawable/search_icon"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

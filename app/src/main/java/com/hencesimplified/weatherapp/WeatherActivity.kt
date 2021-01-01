@@ -22,7 +22,7 @@ class WeatherActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_weather_page)
 
-        CITY = intent.getStringExtra("cityName")
+        CITY = intent.getStringExtra("cityName").toString()
 
         WeatherTask().execute()
     }
